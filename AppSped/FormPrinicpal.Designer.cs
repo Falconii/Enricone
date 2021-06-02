@@ -36,6 +36,7 @@ namespace AppSped
             this.opFim = new System.Windows.Forms.ToolStripMenuItem();
             this.opArquivos = new System.Windows.Forms.ToolStripMenuItem();
             this.janelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.leituraEAnáliseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,22 +66,24 @@ namespace AppSped
             // opUsuarios
             // 
             this.opUsuarios.Name = "opUsuarios";
-            this.opUsuarios.Size = new System.Drawing.Size(180, 22);
+            this.opUsuarios.Size = new System.Drawing.Size(119, 22);
             this.opUsuarios.Text = "Usuários";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(116, 6);
             // 
             // opFim
             // 
             this.opFim.Name = "opFim";
-            this.opFim.Size = new System.Drawing.Size(180, 22);
+            this.opFim.Size = new System.Drawing.Size(119, 22);
             this.opFim.Text = "Fim";
             // 
             // opArquivos
             // 
+            this.opArquivos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.leituraEAnáliseToolStripMenuItem});
             this.opArquivos.Name = "opArquivos";
             this.opArquivos.Size = new System.Drawing.Size(66, 20);
             this.opArquivos.Text = "Arquivos";
@@ -90,6 +93,13 @@ namespace AppSped
             this.janelasToolStripMenuItem.Name = "janelasToolStripMenuItem";
             this.janelasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.janelasToolStripMenuItem.Text = "Janelas";
+            // 
+            // leituraEAnáliseToolStripMenuItem
+            // 
+            this.leituraEAnáliseToolStripMenuItem.Name = "leituraEAnáliseToolStripMenuItem";
+            this.leituraEAnáliseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.leituraEAnáliseToolStripMenuItem.Text = "Leitura E Análise";
+            this.leituraEAnáliseToolStripMenuItem.Click += new System.EventHandler(this.leituraEAnáliseToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -118,6 +128,7 @@ namespace AppSped
         private System.Windows.Forms.ToolStripMenuItem opFim;
         private System.Windows.Forms.ToolStripMenuItem opArquivos;
         private System.Windows.Forms.ToolStripMenuItem janelasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem leituraEAnáliseToolStripMenuItem;
     }
 }
 

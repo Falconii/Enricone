@@ -4,17 +4,8 @@ using System;
 /*
  * Local
  * Usuario postgre
- * Senha S1m10n4t0SQL
+ * Senha 123456
  * Porta 5432
- * 
- * Servidor 192.168.0.251 
- * Usuario postgre
- * Senha   S1m10n4t0SQL - S1m10n4t0ACD
- * Porta   49543
- * 
- * 
- * Usuario: Marcos
- * Senha: M4rc0n1PRJ
  * 
  */
 
@@ -34,16 +25,8 @@ namespace AppSped.DataBase
 
                 Banco = "BANCO: DB_ASSESSORIA_PRODUCAO - LOCAL";
                 connectionString = String.Format("Server={0}; Port={1}; User Id={2}; Password={3}; Database={4}; CommandTimeout={5};",
-                                                                              "localhost", 5432, "postgres", "123456", "db_assessoria_homologacao", 600);
+                                                                              "localhost", 5432, "postgres", "123456", "db_enricone", 100);
             }
-            else
-            {
-
-                Banco = "BANCO: DB_ASSESSORIA_PRODUCAO - 192.168.0.251";
-                connectionString = String.Format("Server={0}; Port={1}; User Id={2}; Password={3}; Database={4}; CommandTimeout={5};",
-                                                          "192.168.0.251", 49543, "postgres", "S1m10n4t0SQL", "db_assessoria_producao",1800);
-            }
-
         }
 
         public static void CreateCommand(string queryString)
